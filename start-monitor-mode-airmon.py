@@ -11,11 +11,17 @@ def start(interface):
 
 
 def main():
+    print('***************************LISTING THE AVAILABLE INTERFACES**************************')
     list()
+    print('***********************************************************************************************************************')
+
     interface = input('Enter the interface name: ')
     check()
     start(interface)
-    print(f'******************Interface {interface} is now in Monitor mode************************')
+    print(f'******************INTERFACE {interface} IS NOW IN MONITOR MODE WITH A FLAG************************')
+    # Create the flag file
+    with open("monitor_mode.flag", "w") as flag_file:
+        flag_file.write("Monitor mode has been started.")
 
 
 if __name__ == '__main__':
