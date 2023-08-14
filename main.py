@@ -1,5 +1,6 @@
 import os
 
+
 def run_script(script_name):
     os.system(f"python3 {script_name}")
 
@@ -15,6 +16,7 @@ def main():
     print("1. Stop Monitor Mode")
     print("2. Sniff Packets")
     print("3. Wi-Fi Sniffer")
+    print("4. Deauthentication Attack")
 
     print('***********************************************************************************************************************')
 
@@ -26,6 +28,8 @@ def main():
         run_script("wifi-interface-sniffer.py")
     elif choice == '3':
         run_script("wifi-sniffer.py")
+    elif choice == '4':
+        run_script("deauth-script.py")
     else:
         print("Invalid choice. Please enter a valid number.")
 
