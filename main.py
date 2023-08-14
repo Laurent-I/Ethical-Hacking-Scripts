@@ -14,6 +14,7 @@ def main():
     print("Available scripts:")
     print("1. Stop Monitor Mode")
     print("2. Sniff Packets")
+    print("3. Wi-Fi Sniffer")
 
     print('***********************************************************************************************************************')
 
@@ -22,7 +23,9 @@ def main():
     if choice == '1':
         run_script("stop-monitor-mode.py")
     elif choice == '2':
-        run_script("packet-sniff.py")
+        run_script("wifi-interface-sniffer.py")
+    elif choice == '3':
+        run_script("wifi-sniffer.py")
     else:
         print("Invalid choice. Please enter a valid number.")
 
