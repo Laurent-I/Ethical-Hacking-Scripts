@@ -8,9 +8,9 @@ def run_deauth_attack(time, ap_mac, client_mac, interface):
 
 def main():
     print("Wi-Fi Deauthentication Attack Script")
-    print("------------------------------------")
+    print("==========================================")
 
-    print("Before running this script, make sure you have run airodump-ng to capture target information.")
+    print("Before running this script, make sure you have airodump-ng running in another tab to capture target information.")
     
     ap_mac = input("Enter the target AP MAC address: ")
     client_mac = input("Enter the client MAC address: ")

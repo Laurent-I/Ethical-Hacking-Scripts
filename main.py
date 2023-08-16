@@ -17,6 +17,10 @@ def main():
     print("2. Sniff Packets")
     print("3. Wi-Fi Sniffer")
     print("4. Deauthentication Attack")
+    print("5. Fake Authentication Attack")
+    print("6. WEP Craking (busy network)")
+    print("7. WEP Craking (non-busy network)")
+    print("8. Launch ARP Replay Attack")
 
     print('***********************************************************************************************************************')
 
@@ -29,7 +33,15 @@ def main():
     elif choice == '3':
         run_script("wifi-sniffer.py")
     elif choice == '4':
-        run_script("deauth-script.py")
+        run_script("deauth-attack.py")
+    elif choice == '5':
+        run_script("fake-auth.py")
+    elif choice == '6':
+        run_script("wep-busy.py")
+    elif choice == '7':
+        run_script("wep.py")
+    elif choice == '8':
+        run_script("arpreplay-attack.py")  
     else:
         print("Invalid choice. Please enter a valid number.")
 
