@@ -1,6 +1,5 @@
 import os
 
-
 def run_script(script_name):
     os.system(f"python3 {script_name}")
 
@@ -18,9 +17,13 @@ def main():
     print("3. Wi-Fi Sniffer")
     print("4. Deauthentication Attack")
     print("5. Fake Authentication Attack")
-    print("6. WEP Craking (busy network)")
-    print("7. WEP Craking (non-busy network)")
+    print("6. WEP Cracking (busy network)")
+    print("7. WEP Cracking (non-busy network)")
     print("8. Launch ARP Replay Attack")
+    print("9. WPA/WPA2 Cracking using Cowpatty")
+    print("10. WPA/WPA2 Cracking using Aircrack-ng")
+    print("11. WPA/WPA2 Cracking using Piping")
+    print("12. WPS Enabled Devices")
 
     print('***********************************************************************************************************************')
 
@@ -41,7 +44,15 @@ def main():
     elif choice == '7':
         run_script("wep.py")
     elif choice == '8':
-        run_script("arpreplay-attack.py")  
+        run_script("arpreplay-attack.py")
+    elif choice == '9':
+        run_script("wpa-cowpatty.py")
+    elif choice == '10':
+        run_script("wpa.py")
+    elif choice == '11':
+        run_script("wpa-with-pipe.py")
+    elif choice == '12':
+        run_script("wps-enabled.py")
     else:
         print("Invalid choice. Please enter a valid number.")
 
