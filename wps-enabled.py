@@ -7,7 +7,7 @@ def check_wps_lock(interface):
 
 def associate_fake_auth():
     print("Issuing warning to associate using fake authentication...")
-    subprocess.run(['python', 'fake-auth.py'])
+    subprocess.run(['python3', 'fake-auth.py'])
 
 def use_reaver():
     bssid = input("Enter the BSSID (MAC Address): ")
@@ -26,6 +26,7 @@ def use_reaver():
     subprocess.run(reaver_cmd)
 
 def main():
+    print("********Run with sudo or with admin privileges********")
     print("Select an option:")
     print("1. Check WPS lock")
     print("2. Associate using fake authentication")
